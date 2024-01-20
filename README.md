@@ -11,29 +11,28 @@ Post Sharing: Users can share images and captions as posts, which are stored in 
 Feed: The main feed displays posts from the users that the logged-in user follows. Users can like and comment on posts.
 
 ## Setup
-Follow these steps to set up and run InstaPix locally:
+#### Follow these steps to set up and run InstaPix locally:
 
 Clone the InstaPix repository to your local machine:
 
 git clone https://github.com/kushalramakanth/InstaPix
 
-Navigate to the project directory:
+#### Navigate to the project directory:
 cd instapix
 
-Install dependencies:
+#### Install dependencies:
 flutter pub get
 
-Set up Firebase:
+#### Set up Firebase:
 Create a Firebase project on the Firebase Console.
 Enable Firebase Authentication and Firestore in the project settings.
 Download the google-services.json file for Android and GoogleService-Info.plist file for iOS from the Firebase Console and place them in the respective platform folders (android/app for Android, ios/Runner for iOS).
-Run the app:
 
+#### Run the app:
 flutter run
 
-Firebase Configuration
+#### Firebase Configuration
 Make sure to update the Firebase configuration in the project:
-
 Open the lib/services/firebase_service.dart file.
 Replace the placeholder values with your Firebase project's configuration.
 dart
